@@ -1,0 +1,16 @@
+# Optional -- only needed for the "refinery" emulation backend, which
+# reproduces the original Binary Ninja plugin's results exactly.
+# Without these, Ungarble falls back to Ghidra's built-in PCode emulator.
+#
+# WARNING: the package is "binary-refinery", NOT "refinery".  PyPI also has an
+# unrelated project called "refinery" (a Halo map editor) that installs a
+# clashing top-level `refinery` package.  If you installed that one by mistake:
+#     pip uninstall refinery
+#     pip install binary-refinery
+#
+# Install these into the SAME interpreter PyGhidra uses (see README.md).
+
+binary-refinery
+unicorn==2.0.1.post1
+intervaltree
+capstone

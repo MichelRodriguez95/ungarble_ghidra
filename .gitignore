@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+ghidra_project/
+*.gpr
+*.rep/
+
+*.deobf
+*.deobf.summary.json
+*.anchored
+*.loose
